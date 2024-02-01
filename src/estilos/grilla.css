@@ -11,7 +11,7 @@
   grid-template-rows: repeat(100, auto);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1200px) {
   .tipoGrilla {
     display: grid;
     justify-content: flex-start;
@@ -20,13 +20,15 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .tipoGrilla {
     grid-template-columns: repeat(2, 50%);
+    background-color: aqua;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 650px) {
   .tipoGrilla {
     grid-template-columns: repeat(1, 100%);
+    background-color: beige;
   }
 }
