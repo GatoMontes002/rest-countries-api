@@ -1,10 +1,7 @@
 import './App.css';
 import { Grilla } from './componente/grilla';
 import { useState, useEffect } from "react";
-import { unPais, todosLosPaises} from './servicios/todosLosPaises'
-
-let pais =[ "None"];
-
+import { todosLosPaises} from './servicios/todosLosPaises'
 
 function App() {
   const [pais, setPais] = useState();
