@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { Grilla } from './componente/grilla';
+import { useState, useEffect } from "react";
+import { unPais, todosLosPaises} from './servicios/todosLosPaises'
+
+let pais =[ "None"];
+
 
 function App() {
+  const [pais, setPais] = useState();
+  useEffect(() =>{ 
+
+                todosLosPaises().then(res => { setPais(res)})
+              
+              }
+              
+              ,[]);
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
       <main>
-        <h1>Hola Mundo 2</h1>
+        <h1>Hola Mundo 2</h1>            
+          <Grilla pais = {pais} />
       </main>
     </div>
   );

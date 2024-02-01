@@ -1,0 +1,32 @@
+.contenedor {
+  display: flex;
+  margin: 15px;
+  justify-content: center;
+  width: 100%;
+}
+.tipoGrilla {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(100, auto);
+}
+
+@media only screen and (max-width: 850px) {
+  .tipoGrilla {
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(100, auto);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tipoGrilla {
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+@media only screen and (max-width: 375px) {
+  .tipoGrilla {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
