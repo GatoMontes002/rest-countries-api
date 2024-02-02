@@ -3,11 +3,13 @@
     padding: 10px;
     width: 264px;
     height: 346px;
-    border-radius: 10px;
+    border-radius: var(--round-tarjeta);
     margin-right: 15px;
     margin-top: 15px;
-    background-color: bisque;
+    /*background-color: var(--Dark-Mode-Element);*/
+    background-color: var(--Light-Mode-Element);
     position: relative;
+    border: solid 0.1em lightgray;
 }
 
 .bandera{
@@ -16,4 +18,24 @@
     position: relative;
     top: -10px;
     left: -10px;
+    border-radius: var(--round-tarjeta) var(--round-tarjeta) 0 0; 
+}
+
+.fuente800{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
+.fuente600{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+.fuente300{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+}
+.colorNoche{
+    color: var(--Light-Mode-Element);
+}
+.colorDia{
+    color: var(--Dark-Mode-Element);
 }

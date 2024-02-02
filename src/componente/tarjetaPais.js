@@ -5,9 +5,12 @@ const TarjetaPais = ({nombre,capital,poblacion,bandera}) => {
         <div>
             <img src={bandera.png} alt={bandera.alt} className="bandera" />
         </div>
-        <h3>{nombre}</h3>
-        <p>{capital}</p>
-        <p>{poblacion}</p>
+        <h2 className='fuente800 colorDia'>{nombre}</h2>
+
+        <span className='fuente600 colorDia'>Capital:</span>&nbsp; <span className='fuente300'>{capital}</span>
+        <br/>
+        <span className='fuente600 colorDia'>Population:</span>&nbsp; <span className='fuente300'>{poblacion}</span>
+        
         
     </article>;
 };

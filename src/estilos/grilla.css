@@ -9,6 +9,7 @@
   justify-content: flex-start;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(100, auto);
+  grid-gap: 1em 2em;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -23,12 +24,10 @@
 @media only screen and (max-width: 1000px) {
   .tipoGrilla {
     grid-template-columns: repeat(2, 50%);
-    background-color: aqua;
   }
 }
 @media only screen and (max-width: 650px) {
   .tipoGrilla {
     grid-template-columns: repeat(1, 100%);
-    background-color: beige;
   }
 }
