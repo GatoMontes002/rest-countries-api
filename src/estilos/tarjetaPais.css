@@ -5,13 +5,17 @@
     height: 346px;
     border-radius: var(--round-tarjeta);
     margin-right: 15px;
-    margin-top: 15px;
-    /*background-color: var(--Dark-Mode-Element);*/
-    background-color: var(--Light-Mode-Element);
+    margin-top: 15px;    
     position: relative;
     border: solid 0.1em lightgray;
 }
 
+.colorTarjetaDia{
+    background-color: var(--Light-Mode-Element);
+}
+.colorTarjetaNoche{
+    background-color: var(--Dark-Mode-Element);
+}
 .bandera{
     width: 284px;
     height: 160px;
@@ -38,4 +42,7 @@
 }
 .colorDia{
     color: var(--Dark-Mode-Element);
+}
+.colorNoche{
+    color: var(--Light-Mode-Element);
 }

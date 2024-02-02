@@ -3,3 +3,21 @@
     padding-left: 30px;
     background-color: blanchedalmond;
 }
+.izq{
+    display: flex;
+    width:75%;
+    align-items:baseline;
+}
+.der{
+    display: flex;
+    padding-right: 50px;
+    justify-content: flex-end;
+    align-items:center;
+    width:25%;
+}
+.modo-dia-noche{
+    border:solid;
+}
+.modo-dia-noche:hover{
+   cursor: pointer;
+}
