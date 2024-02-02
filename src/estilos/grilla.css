@@ -1,11 +1,13 @@
 .contenedor {
   display: flex;
-  margin: 15px;
+  position: relative;
   justify-content: center;
   width: 100%;
 }
 .tipoGrilla {
   display: grid;
+  position: relative;
+  left: -2em;
   justify-content: flex-start;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(100, auto);
@@ -18,16 +20,19 @@
     justify-content: flex-start;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(100, auto);
+    left: 0;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .tipoGrilla {
     grid-template-columns: repeat(2, 50%);
+    left: 0;
   }
 }
 @media only screen and (max-width: 650px) {
   .tipoGrilla {
     grid-template-columns: repeat(1, 100%);
+    left: 0;
   }
 }

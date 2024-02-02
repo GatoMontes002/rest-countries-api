@@ -1,3 +1,5 @@
 .encabezado{
+    display: flex;
+    padding-left: 30px;
     background-color: blanchedalmond;
 }
