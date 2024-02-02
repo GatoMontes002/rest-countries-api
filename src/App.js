@@ -1,5 +1,6 @@
 import './App.css';
 import { Grilla } from './componente/grilla';
+import { Encabezado } from './componente/encabezado';
 import { useState, useEffect } from "react";
 import { todosLosPaises} from './servicios/todosLosPaises'
 
@@ -16,9 +17,9 @@ function App() {
 
   return (
     <div className="App">
-      <main>
-        <h1>Hola Mundo 2</h1>            
-          <Grilla pais = {pais} />
+      <Encabezado/>
+      <main>         
+        <Grilla pais = {pais} />
       </main>
     </div>
   );

@@ -1,5 +1,4 @@
 .tarjeta{
-    border: solid;
     text-align: left;
     padding: 10px;
     width: 264px;
@@ -8,4 +7,13 @@
     margin-right: 15px;
     margin-top: 15px;
     background-color: bisque;
+    position: relative;
+}
+
+.bandera{
+    width: 284px;
+    height: 160px;
+    position: relative;
+    top: -10px;
+    left: -10px;
 }
