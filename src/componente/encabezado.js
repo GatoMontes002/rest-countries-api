@@ -36,13 +36,16 @@ const Encabezado = () => {
     for (let item of elementos) {
       item.classList.remove("colorDia");
       item.classList.remove("colorNoche");
+      item.classList.remove("colorTarjetaDia");
+      item.classList.remove("colorTarjetaNoche");
+      item.classList.add(valor);
       item.classList.add(valor2);
     }
     
   }
 
   return (
-    <header className="encabezado colorDia">
+    <header className="encabezado colorDia colorTarjetaDia">
       <h1 className="izq">Where in the world?</h1>
       <span className="der">
         {diaOnoche === "light-theme" ? (
