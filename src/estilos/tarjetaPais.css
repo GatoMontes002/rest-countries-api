@@ -38,6 +38,12 @@
 .colorDia{
     color: var(--Dark-Mode-Element);
 }
+.colorTarjetaNoche{
+    color: var(--Light-Mode-Element);
+}
+.colorTarjetaDia{
+    color: var(--Dark-Mode-Element);
+}
 
 article:hover{
     transform: translate(5px, -5px);

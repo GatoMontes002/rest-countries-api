@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.colorNoche{
+  color: var(--Light-Mode-Element);
+}
+.colorDia{
+  color: var(--Dark-Mode-Element);
+}
+.colorTarjetaNoche{
+  color: var(--Light-Mode-Element);
+}
+.colorTarjetaDia{
+  color: var(--Dark-Mode-Element);
+}

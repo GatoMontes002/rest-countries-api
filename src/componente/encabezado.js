@@ -13,12 +13,17 @@ const Encabezado = () => {
     } else {
       setDiaOnoche("light-theme");
     }
+    let miapp = document.getElementById("claseprincipal");
+    miapp.classList.toggle("colorTarjetaDia");
+    miapp.classList.toggle("colorTarjetaNoche");
+    miapp.classList.toggle("colorDia");
+    miapp.classList.toggle("colorNoche");
+
     let elementos = document.getElementsByClassName("tarjeta");
-    //elementos.classList.toggle("colorTarjetaDia");
-      //  elementos.classList.toggle("colorTarjetaNoche");
+    
     console.log("***********");
     console.log(elementos);
-    try {
+    /*try {
       for (let element of elementos) {
         element.classList.toggle("colorTarjetaDia");
         element.classList.toggle("colorTarjetaNoche");
@@ -29,11 +34,7 @@ const Encabezado = () => {
       console.log("**errrrrrrr**");
       console.error(Error);
     }
-
-    //els.classList.toggle("colorDia");
-    //els.classList.toggle("colorNoche");
-
-    
+    */
   }
 
   return (
