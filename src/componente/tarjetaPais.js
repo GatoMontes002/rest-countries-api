@@ -9,7 +9,7 @@ const TarjetaPais = ({ nombre, capital, poblacion, bandera }) => {
   return (
     <article
       onClick={cliquearTarjeta}
-      className="tarjeta colorTarjetaDia colorDia"
+      className="tarjeta colorDia"
     >
       <Link to={ `/detallepais/${nombre}` }>
         <div>
