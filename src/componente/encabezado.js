@@ -5,7 +5,6 @@ import { FaMoon, FaSun } from "react-icons/fa";
 const Encabezado = () => {
   let [diaOnoche, setDiaOnoche] = useState("light-theme");
   function cliquear() {
-    console.log(document.body.classList);
     document.body.classList.toggle("light-theme");
     document.body.classList.toggle("dark-theme");
     if (diaOnoche === "light-theme") {
@@ -18,23 +17,7 @@ const Encabezado = () => {
     miapp.classList.toggle("colorTarjetaNoche");
     miapp.classList.toggle("colorDia");
     miapp.classList.toggle("colorNoche");
-
-    let elementos = document.getElementsByClassName("tarjeta");
     
-    console.log("***********");
-    console.log(elementos);
-    /*try {
-      for (let element of elementos) {
-        element.classList.toggle("colorTarjetaDia");
-        element.classList.toggle("colorTarjetaNoche");
-        element.classList.toggle("colorDia");
-        element.classList.toggle("colorNoche");
-      };
-    } catch (Error) {
-      console.log("**errrrrrrr**");
-      console.error(Error);
-    }
-    */
   }
 
   return (
