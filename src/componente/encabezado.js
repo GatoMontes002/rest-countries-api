@@ -12,16 +12,37 @@ const Encabezado = () => {
     } else {
       setDiaOnoche("light-theme");
     }
-    let miapp = document.getElementById("claseprincipal");
-    miapp.classList.toggle("colorTarjetaDia");
-    miapp.classList.toggle("colorTarjetaNoche");
-    miapp.classList.toggle("colorDia");
-    miapp.classList.toggle("colorNoche");
+
+    let valor = "colorTarjetaDia";
+    if (document.body.classList[0]!=="light-theme")
+      valor = "colorTarjetaNoche";
+
+    let valor2 = "colorDia";
+    if (document.body.classList[0]!=="light-theme")
+      valor2 = "colorNoche";
+    
+    let elementos = document.getElementsByClassName("tarjeta");
+    for (let item of elementos) {
+      item.classList.remove("colorTarjetaNoche");
+      item.classList.remove("colorTarjetaDia");
+      item.classList.remove("colorDia");
+      item.classList.remove("colorNoche");
+      item.classList.add(valor);
+      item.classList.add(valor2);
+    }
+
+    elementos = document.getElementsByClassName("encabezado");
+    
+    for (let item of elementos) {
+      item.classList.remove("colorDia");
+      item.classList.remove("colorNoche");
+      item.classList.add(valor2);
+    }
     
   }
 
   return (
-    <header className="encabezado">
+    <header className="encabezado colorDia">
       <h1 className="izq">Where in the world?</h1>
       <span className="der">
         {diaOnoche === "light-theme" ? (

@@ -4,15 +4,21 @@ import "../estilos/tarjetaPais.css";
 const TarjetaPais = ({ nombre, capital, poblacion, bandera }) => {
   function cliquearTarjeta() {
     console.log("tarjata nro " + nombre);
+    console.log(document.body.classList[0]);
+    
   }
+  
+  let valor = "tarjeta colorTarjetaDia colorDia";
+  if (document.body.classList[0]!=="light-theme")
+    valor = "tarjeta colorTarjetaNoche colorNoche";
 
   return (
     <article
       onClick={cliquearTarjeta}
-      className="tarjeta"
+      
     >
       <Link to={ `/detallepais/${nombre}` }>
-        <div>
+        <div className={valor}>
           <div>
             <img src={bandera.png} alt={bandera.alt} className="bandera" />
           </div>

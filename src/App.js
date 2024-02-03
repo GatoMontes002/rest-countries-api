@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div id="claseprincipal" className="colorTarjetaDia colorDia">
+    <div id="claseprincipal" >
       <Encabezado />
       <main>
         <BrowserRouter>
