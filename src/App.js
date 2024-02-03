@@ -1,25 +1,20 @@
-import './App.css';
-import { Grilla } from './componente/grilla';
-import { Encabezado } from './componente/encabezado';
-import { useState, useEffect } from "react";
-import { todosLosPaises} from './servicios/todosLosPaises'
+import "./App.css";
+import { Grilla } from "./componente/grilla";
+import { Encabezado } from "./componente/encabezado";
+import { DetallePais } from "./componente/detallePais";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-  const [pais, setPais] = useState();
-  useEffect(() =>{ 
-
-                todosLosPaises().then(res => { setPais(res)})
-              
-              }
-              
-              ,[]);
-  
-
   return (
     <div className="App">
-      <Encabezado/>
-      <main>         
-        <Grilla pais = {pais} />
+      <Encabezado />
+      <main>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Grilla/>} />
+            <Route path="/detallepais/:nombrepais" element={<DetallePais  />} />
+          </Routes>
+        </BrowserRouter>
       </main>
     </div>
   );

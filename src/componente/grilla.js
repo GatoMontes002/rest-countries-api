@@ -1,19 +1,33 @@
-import '../estilos/grilla.css'
-import { TarjetaPais } from './tarjetaPais'
+import "../estilos/grilla.css";
+import { TarjetaPais } from "./tarjetaPais";
+import { useState, useEffect } from "react";
+import { todosLosPaises } from "../servicios/todosLosPaises";
 
-const Grilla = ({pais}) => {
-    return <section className='contenedor'>
-        <div className='tipoGrilla'>
-            { pais &&
-            pais.map(el => <span><TarjetaPais key = {el.nombre+el.capital+el.poblacion}
-                    nombre={el.nombre} 
-                    capital={el.capital} 
-                    poblacion={el.poblacion} 
-                    bandera={el.bandera} 
-                    /></span>)
-            }
-        </div>
-    </section>;
+const Grilla = () => {
+  const [pais, setPais] = useState();
+  useEffect(() => {
+    todosLosPaises().then((res) => {
+      setPais(res);
+    });
+  }, []);
+
+  return (
+    <section className="contenedor">
+      <div className="tipoGrilla">
+        {pais &&
+          pais.map((el) => (
+            <span key={el.nombre + el.capital + el.poblacion}>
+              <TarjetaPais
+                nombre={el.nombre}
+                capital={el.capital}
+                poblacion={el.poblacion}
+                bandera={el.bandera}
+              />
+            </span>
+          ))}
+      </div>
+    </section>
+  );
 };
-  
-export {Grilla};
+
+export { Grilla };
