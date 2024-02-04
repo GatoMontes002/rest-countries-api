@@ -13,7 +13,7 @@ const BotonVecino = ({ codigoVecino }) => {
       setPais(res);
       setIsloading(true);
     });
-  }, []);
+  }, [codigoVecino]);
 
   return (
     <div className="contenedor-boton-vecino">
