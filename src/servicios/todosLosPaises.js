@@ -12,7 +12,9 @@ const extraerDatos = async function(paises){
                             "nombre":el.name.common, 
                             "poblacion":el.population, 
                             "capital":el.capital,
-                            "bandera":el.flags
+                            "bandera":el.flags,
+                            "ccn3": el.cca3,
+                            "limitrofes":el.borders
                         });
                         //"bandera":el.flags});
                     }
@@ -35,8 +37,19 @@ async function unPais(pais){
     return extraerDatos(Promise.all([fetch(url).then(res => res.json())]));
 }
 
-export {unPais, todosLosPaises};
+async function paisesLimitrofes(codigoPaisesLimitrofes){
+    console.log(codigoPaisesLimitrofes);
+    
+}
+
+async function obtenerNombrePorCodigo(codigoPais){
+    const url = "https://restcountries.com/v3.1/alpha?codes="+codigoPais ;
+    return extraerDatos(Promise.all([fetch(url).then(res => res.json())]));
+}
+
+export {unPais, todosLosPaises, paisesLimitrofes, obtenerNombrePorCodigo};
 
 //todosLosPaises().then(res => console.log(res))
 //unPais("Argentina").then(res => console.log(res))
+//obtenerNombrePorCodigo("aut").then(res => console.log(res))
 

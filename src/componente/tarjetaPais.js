@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import "../estilos/tarjetaPais.css";
 
-const TarjetaPais = ({ nombre, capital, poblacion, bandera }) => {
+const TarjetaPais = ({ nombre, capital, poblacion, bandera,ccn3 }) => {
+  
   function cliquearTarjeta() {
     console.log("tarjata nro " + nombre);
     console.log(document.body.classList[0]);
@@ -17,7 +18,7 @@ const TarjetaPais = ({ nombre, capital, poblacion, bandera }) => {
       onClick={cliquearTarjeta}
       
     >
-      <Link to={ `/detallepais/${nombre}` }>
+      <Link to={ `/detallepais/${ccn3}` }>
         <div className={valor}>
           <div>
             <img src={bandera.png} alt={bandera.alt} className="bandera" />

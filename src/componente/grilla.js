@@ -22,6 +22,7 @@ const Grilla = () => {
                 capital={el.capital}
                 poblacion={el.poblacion}
                 bandera={el.bandera}
+                ccn3={el.ccn3}
               />
             </span>
           ))}
