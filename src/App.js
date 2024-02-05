@@ -3,12 +3,12 @@ import { Grilla } from "./componente/grilla";
 import { Encabezado } from "./componente/encabezado";
 import { DetallePais } from "./componente/detallePais";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { BotonDropDownRegion } from "./componente/botonDropDownRegion"
+
 
 function App() {
   return (
     <div id="claseprincipal" >
-      <BotonDropDownRegion/>
+      
       <Encabezado />
       <main>
         <BrowserRouter>
