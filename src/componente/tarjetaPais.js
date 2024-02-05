@@ -20,7 +20,7 @@ const TarjetaPais = ({ nombre, capital, poblacion, bandera,ccn3,region }) => {
     >
       <Link to={ `/detallepais/${ccn3}` }>
         <div className={valor}>
-          <div>
+          <div >
             <img src={bandera.png} alt={bandera.alt} className="bandera" />
           </div>
           <h2 className="fuente800">{nombre}</h2>

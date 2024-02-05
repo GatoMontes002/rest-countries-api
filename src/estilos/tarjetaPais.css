@@ -1,8 +1,8 @@
 .tarjeta{
     text-align: left;
     padding: 10px;
-    width: 264px;
-    height: 346px;
+    width: 284px;
+    height: 394px;
     border-radius: var(--round-tarjeta);
     margin-right: 15px;
     margin-top: 15px;    
@@ -12,7 +12,7 @@
 
 
 .bandera{
-    width: 284px;
+    width: 281px;
     height: 160px;
     position: relative;
     top: -10px;
@@ -49,4 +49,8 @@
 
 article:hover{
     transform: translate(5px, -5px);
+    a {
+        text-decoration: none;
+      }
 }
+
