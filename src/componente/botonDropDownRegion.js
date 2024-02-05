@@ -12,7 +12,7 @@ function BotonDropDownRegion() {
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item href="/detalleporregion/Europe">Action</Dropdown.Item>
+        <Dropdown.Item href="/grilla/Europe">Action</Dropdown.Item>
         
         <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
       </Dropdown.Menu>
