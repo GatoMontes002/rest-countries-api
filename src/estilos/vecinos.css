@@ -1,4 +1,21 @@
 .contenedor-vecinos{
-    background-color: brown;
-    border: solid;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dark-theme .color-text-vecino{
+    color:white;
+    margin-right: 5px;
+}
+.light-theme .color-text-vecino{
+    color:var(--Light-Mode-Text);
+    margin-right: 5px;
+}
+
+.contenedor-vecinos-titulo{
+    width: 20%;
+}
+.contenedor-vecinos-botones{
+    width: 80%;
 }

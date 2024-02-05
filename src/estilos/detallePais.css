@@ -126,3 +126,7 @@
         width: 100%;
     }
 }
+.limitrofes-columna{
+    display: flex;
+    flex-direction: column;
+}

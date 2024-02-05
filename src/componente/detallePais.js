@@ -26,7 +26,7 @@ const DetallePais = () => {
       {isloading ? (
         <div>
           <div className="contenedor-pais-detalle">
-          <div className="contenedor-imagen-detalle">
+            <div className="contenedor-imagen-detalle">
               <img
                 src={pais[0].bandera.png}
                 alt={pais[0].bandera.alt}
@@ -35,7 +35,7 @@ const DetallePais = () => {
             </div>
             <div className="contenedor-info-detalle">
               <h2 className="titulopais">{pais[0].nombre}</h2>
-
+            <div className="limitrofes-columna">
               <div className="contenedor-info-detalle-aux">
                 <div className="contenedor-info-detalle-izq">
                   <ul className="sinmarks">
@@ -79,10 +79,13 @@ const DetallePais = () => {
                 </div>
               </div>
             </div>
-            
+                        
+            <Vecinos listadoVecinos={pais[0].limitrofes} />
+
+            </div>
           </div>
 
-          <Vecinos listadoVecinos={pais[0].limitrofes} />
+          
         </div>
       ) : (
         <h2>Buscando ...</h2>

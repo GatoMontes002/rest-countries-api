@@ -1,17 +1,20 @@
+import "../estilos/vecinos.css"
 import { BotonVecino } from "./botonVecino";
 
 const Vecinos = ({ listadoVecinos }) => {
   console.log('logvecinos',listadoVecinos);
   return (
     <div className="contenedor-vecinos">
-      <h2>vecino{listadoVecinos}</h2>
-      <ul>
-        {listadoVecinos?.map((el) => (
-          <li key={el}>
-            <BotonVecino codigoVecino={el} />
-          </li>
-        ))}
-      </ul>
+        <div className="contenedor-vecinos-titulo">
+            {listadoVecinos ?  <span className="color-text-vecino">Border Countries</span> : "No Borders"}
+        </div>
+        <div className="contenedor-vecinos-botones">
+            {listadoVecinos?.map((el) => (
+              
+                <BotonVecino key={el} codigoVecino={el} />
+              
+            ))}
+        </div>
     </div>
   );
 };

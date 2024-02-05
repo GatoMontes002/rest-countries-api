@@ -1,3 +1,17 @@
-.contenedor-boton-vecino{
-    background-color: red;
+.boton-vacino-formato{
+    margin: 3px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    height: 2.5rem;
+    border-radius: 8px;
+    min-width: 80px;
+}
+.dark-theme .boton-vacino-formato{
+    background-color: var(--Dark-Mode-Element);
+    color: white;
+}
+
+.light-theme .boton-vacino-formato{
+    background-color: var(--Light-Mode-Element);
+    color: var(--Light-Mode-Text);
 }

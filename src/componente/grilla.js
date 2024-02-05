@@ -23,6 +23,7 @@ const Grilla = () => {
                 poblacion={el.poblacion}
                 bandera={el.bandera}
                 ccn3={el.ccn3}
+                region={el.region}
               />
             </span>
           ))}
