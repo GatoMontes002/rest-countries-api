@@ -9,25 +9,25 @@ function BotonDropDownRegion() {
         aria-haspopup="true"
         aria-expanded="false"
       >
-        Dropdown button
+        Filter by Region
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="/Africa">
+        <a class="dropdown-item" href="/detalleporregion/Africa">
           Africa
         </a>
-        <a class="dropdown-item" href="/America">
+        <a class="dropdown-item" href="/detalleporregion/America">
           America
         </a>
-        <a class="dropdown-item" href="/Asia">
+        <a class="dropdown-item" href="/detalleporregion/Asia">
           Asia
         </a>
-        <a class="dropdown-item" href="/Europe">
+        <a class="dropdown-item" href="/detalleporregion/Europe">
           Europe
         </a>
-        <a class="dropdown-item" href="/Oceania">
+        <a class="dropdown-item" href="/detalleporregion/Oceania">
           Oceania
         </a>
-        <a class="dropdown-item" href="/All">
+        <a class="dropdown-item" href="/">
           All
         </a>
       </div>

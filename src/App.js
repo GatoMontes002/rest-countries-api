@@ -14,7 +14,7 @@ function App() {
         <BrowserRouter>
           <Routes>
           <Route path="/" element={<Grilla/>} />
-            <Route path="/:miregion" element={<Grilla/>} />
+            <Route path="/detalleporregion/:miregion" element={<Grilla/>} />
             <Route path="/detallepais/:nombrepais" element={<DetallePais  />} />
           </Routes>
         </BrowserRouter>
