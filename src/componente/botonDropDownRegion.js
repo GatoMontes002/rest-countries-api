@@ -12,9 +12,12 @@ function BotonDropDownRegion() {
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item href="/grilla/Europe">Action</Dropdown.Item>
-        
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        <Dropdown.Item href="/grilla/Africa">Africa</Dropdown.Item>
+        <Dropdown.Item href="/grilla/America">America</Dropdown.Item>
+        <Dropdown.Item href="/grilla/Asia">Asia</Dropdown.Item>
+        <Dropdown.Item href="/grilla/Europe">Europe</Dropdown.Item>
+        <Dropdown.Item href="/grilla/Oceania">Oceania</Dropdown.Item>
+        <Dropdown.Item href="/">All</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );
