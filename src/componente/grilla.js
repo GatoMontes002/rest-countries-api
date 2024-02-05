@@ -8,8 +8,7 @@ import { BotonDropDownRegion } from "./botonDropDownRegion";
 const Grilla = () => {
   const [pais, setPais] = useState();
   const miregion = useParams().miregion;
-  console.log(miregion);
-
+  
   useEffect(() => {
     miregion
       ? paisesPorRegion(miregion).then((res) => {

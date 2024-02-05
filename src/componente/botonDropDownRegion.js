@@ -5,13 +5,16 @@ function BotonDropDownRegion() {
   return (
     <Dropdown>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Dropdown Button
+        Filter by Region
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item as={Link} to="/grilla/america">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        <Dropdown.Item as={Link} to="/grilla/africa">Africa</Dropdown.Item>
+        <Dropdown.Item as={Link} to="/grilla/america">America</Dropdown.Item>
+        <Dropdown.Item as={Link} to="/grilla/asia">Asia</Dropdown.Item>
+        <Dropdown.Item as={Link} to="/grilla/europe">Europa</Dropdown.Item>
+        <Dropdown.Item as={Link} to="/grilla/oceania">Oceania</Dropdown.Item>
+        <Dropdown.Item as={Link} to="/">All</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

@@ -4,12 +4,10 @@ import { useState, useEffect } from "react";
 import { obtenerNombrePorCodigo } from "../servicios/todosLosPaises";
 
 const BotonVecino = ({ codigoVecino }) => {
-  console.log("estoy", codigoVecino);
   const [pais, setPais] = useState();
   const [isloading, setIsloading] = useState(false);
   useEffect(() => {
     obtenerNombrePorCodigo(codigoVecino).then((res) => {
-        console.log("quitar",res);
       setPais(res);
       setIsloading(true);
     });

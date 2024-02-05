@@ -2,22 +2,13 @@ import { Link } from "react-router-dom";
 import "../estilos/tarjetaPais.css";
 
 const TarjetaPais = ({ nombre, capital, poblacion, bandera,ccn3,region }) => {
-  
-  function cliquearTarjeta() {
-    console.log("tarjata nro " + nombre);
-    console.log(document.body.classList[0]);
     
-  }
-  
   let valor = "tarjeta colorTarjetaDia colorDia";
   if (document.body.classList[0]!=="light-theme")
     valor = "tarjeta colorTarjetaNoche colorNoche";
 
   return (
-    <article
-      onClick={cliquearTarjeta}
-      
-    >
+    <article>
       <Link to={ `/detallepais/${ccn3}` }>
         <div className={valor}>
           <div >

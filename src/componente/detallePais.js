@@ -6,7 +6,6 @@ import { Vecinos } from "./vecinos";
 
 const DetallePais = () => {
   const nombrepais = useParams().nombrepais;
-  console.log("logdetallepais", nombrepais);
   const [pais, setPais] = useState();
   const [isloading, setIsloading] = useState(false);
   useEffect(() => {
@@ -18,10 +17,6 @@ const DetallePais = () => {
 
   return (
     <div className="color">
-<Link to="/grilla/america">
-        america
-      </Link>
-
 
       <Link to="/">
         <button className="boton-volver">
