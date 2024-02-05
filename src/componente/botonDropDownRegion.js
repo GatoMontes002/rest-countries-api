@@ -1,37 +1,22 @@
+import { Link } from "react-router-dom";
+
+
+
+import Dropdown from 'react-bootstrap/Dropdown';
+
 function BotonDropDownRegion() {
   return (
-    <div class="dropdown">
-      <button
-        class="btn btn-secondary dropdown-toggle"
-        type="button"
-        id="dropdownMenuButton"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        Filter by Region
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="/detalleporregion/Africa">
-          Africa
-        </a>
-        <a class="dropdown-item" href="/detalleporregion/America">
-          America
-        </a>
-        <a class="dropdown-item" href="/detalleporregion/Asia">
-          Asia
-        </a>
-        <a class="dropdown-item" href="/detalleporregion/Europe">
-          Europe
-        </a>
-        <a class="dropdown-item" href="/detalleporregion/Oceania">
-          Oceania
-        </a>
-        <a class="dropdown-item" href="/">
-          All
-        </a>
-      </div>
-    </div>
+    <Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+        Dropdown Button
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="/detalleporregion/Europe">Action</Dropdown.Item>
+        <Dropdown.Item Link to="/detalleporregion/Europe">Another action</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
   );
 }
 
