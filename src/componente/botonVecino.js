@@ -19,9 +19,9 @@ const BotonVecino = ({ codigoVecino }) => {
     <div className="contenedor-boton-vecino">
       {isloading && (
         <Link to={`/detallepais/${pais[0].ccn3}`}>
-          <span>
+          <button>
             poner {codigoVecino} {pais[0].nombre}
-          </span>
+          </button>
         </Link>
       )}
     </div>

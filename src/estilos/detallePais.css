@@ -1,3 +1,128 @@
 .color{
-    background-color: aquamarine;
+    padding: 3rem;
+}
+
+.boton-volver{
+    height: 2rem;
+    width: 7rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+    border-width: 1px;
+    border-color: lightgray;
+    font-size: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
+.boton-volver:hover{
+    cursor: pointer;
+}
+.dark-theme .boton-volver {
+    background-color: var(--Dark-Mode-Element);
+    color: white;
+}
+.light-theme .boton-volver {
+    background-color: var(--Light-Mode-Element);
+    color: var(--Light-Mode-Text);
+}
+
+.contenedor-pais-detalle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-imagen-detalle{
+    width: 50%;
+}
+.contenedor-info-detalle{
+    width: 50%;
+    padding-left: 30px;
+}
+.contenedor-info-detalle-aux{
+    display: flex;
+}
+.contenedor-info-detalle-izq{
+    width: 50%;
+}
+.contenedor-info-detalle-der{
+    width: 50%;
+}
+.letragruesa {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
+.dark-theme .letragruesa {
+    color: white;
+}
+.light-theme .letragruesa {
+    color: var(--Light-Mode-Text);
+}
+
+.dark-theme .titulopais {
+    color: white;
+}
+.light-theme .titulopais {
+    color: var(--Light-Mode-Text);
+}
+
+.letrafina {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+}
+
+.dark-theme .letrafina {
+    color: white;
+}
+.light-theme .letrafina {
+    color: var(--Light-Mode-Text);
+}
+.sinmarks{
+    list-style-type: none;
+    padding: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .contenedor-pais-detalle{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-info-detalle{
+        padding: 0;
+    }
+    .contenedor-imagen-detalle{
+        width: 100%;
+    }
+    .contenedor-info-detalle{
+        width: 100%;
+    }
+   
+}
+.centrar-contenedor{
+    background-color: aqua;
+    width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedor-pais-detalle{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contenedor-info-detalle-aux{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .contenedor-imagen-detalle-aux{
+        width: 100%;
+    }
+    
+    .contenedor-info-detalle-izq{
+        width: 100%;
+    }
+    .contenedor-info-detalle-der{
+        width: 100%;
+    }
 }

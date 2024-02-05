@@ -6,7 +6,7 @@ const Vecinos = ({ listadoVecinos }) => {
     <div className="contenedor-vecinos">
       <h2>vecino{listadoVecinos}</h2>
       <ul>
-        {listadoVecinos.map((el) => (
+        {listadoVecinos?.map((el) => (
           <li key={el}>
             <BotonVecino codigoVecino={el} />
           </li>

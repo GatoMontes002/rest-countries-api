@@ -1,4 +1,17 @@
-
+const parsearcurrencies = function(dato){
+    let res = "";
+    for (let item in dato){
+        res = res + dato[item].name + " / ";
+    }
+    return res.substring(0, res.length-2);
+}
+const parsearlenguajes = function(dato){
+    let res = "";
+    for (let item in dato){
+        res = res + dato[item] + " / ";
+    }
+    return res.substring(0, res.length-2);
+}
 const extraerDatos = async function(paises){    
     const miarray = [];
     await Promise.all([paises.then(res => { 
@@ -10,11 +23,17 @@ const extraerDatos = async function(paises){
                         //miarray.push(el.name.common,el.population,el.capital,el.flags);
                         miarray.push({
                             "nombre":el.name.common, 
+                            "nombrenativo":el.name.official, 
                             "poblacion":el.population, 
                             "capital":el.capital,
                             "bandera":el.flags,
                             "ccn3": el.cca3,
-                            "limitrofes":el.borders
+                            "limitrofes":el.borders,
+                            "region":el.region,
+                            "subregion":el.subregion,
+                            "tld":el.tld,
+                            "currencies":parsearcurrencies(el.currencies),
+                            "languages":parsearlenguajes(el.languages)
                         });
                         //"bandera":el.flags});
                     }
