@@ -20,7 +20,7 @@ const DetallePais = () => {
     <div className="color">
       <Link to="/">
         <button className="boton-volver">
-          <span>&larr;&nbsp; </span>Back
+          <bold>&larr;</bold>&nbsp; Back
         </button>
       </Link>
       {isloading ? (
