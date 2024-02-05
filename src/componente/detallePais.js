@@ -18,6 +18,11 @@ const DetallePais = () => {
 
   return (
     <div className="color">
+<Link to="/grilla/america">
+        america
+      </Link>
+
+
       <Link to="/">
         <button className="boton-volver">
           <bold>&larr;</bold>&nbsp; Back
