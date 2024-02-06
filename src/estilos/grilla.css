@@ -82,7 +82,7 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .izq{
     justify-content: center;
     width: 100% !important;
@@ -90,6 +90,13 @@
   .der{
     justify-content: center !important;
     width: 100% !important;
+  }
+  .boton-busqueda{
+    width: 250px !important;
+  }
+  .tarjeta{
+    position: static !important;
+    margin-right: 0 !important;
   }
 }
 
