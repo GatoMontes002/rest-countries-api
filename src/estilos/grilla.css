@@ -98,5 +98,11 @@
     position: static !important;
     margin-right: 0 !important;
   }
+  .color-text-vecino{
+    width: 100% !important;
+  }
+  .contenedor-vecinos-titulo{
+    width: 100% !important;
+  }
 }
 

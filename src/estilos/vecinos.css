@@ -7,6 +7,7 @@
 .dark-theme .color-text-vecino{
     color:white;
     margin-right: 5px;
+    
 }
 .light-theme .color-text-vecino{
     color:var(--Light-Mode-Text);
@@ -17,6 +18,7 @@
     width: 25%;
     min-width: 120px;
 }
+
 .contenedor-vecinos-botones{
     width: auto;
 }
