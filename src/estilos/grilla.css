@@ -45,6 +45,10 @@
   width: 40%;
 }
 
+.margen-filtros{
+  margin: 1rem;
+}
+
 
 @media only screen and (max-width: 650px) {
   .tipoGrilla {
@@ -57,7 +61,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
   }
   .contenedor-por-nombre{
     display: flex;

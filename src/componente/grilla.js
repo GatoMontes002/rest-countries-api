@@ -23,10 +23,10 @@ const Grilla = () => {
     <>
         <div className="contenedor-filtros">
             <div className="contenedor-por-nombre">
-              <BotonDropDownRegion/>
+              <span className="margen-filtros"><BotonDropDownRegion/></span>
             </div>
             <div className="contenedor-por-region">
-              <BotonDropDownRegion/>
+            <span className="margen-filtros"><BotonDropDownRegion/></span>
             </div>
         </div>
         <section className="contenedor">
