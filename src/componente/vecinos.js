@@ -2,7 +2,6 @@ import "../estilos/vecinos.css"
 import { BotonVecino } from "./botonVecino";
 
 const Vecinos = ({ listadoVecinos }) => {
-  console.log('logvecinos',listadoVecinos);
   return (
     <div className="contenedor-vecinos">
         <div className="contenedor-vecinos-titulo">

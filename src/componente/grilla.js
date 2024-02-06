@@ -20,27 +20,36 @@ const Grilla = () => {
   }, [miregion]);
 
   return (
-    <section className="contenedor">
-      <BotonDropDownRegion/>
-      <div className="tipoGrilla">
-        {pais ? (
-          pais.map((el) => (
-            <span key={el.nombre + el.capital + el.poblacion}>
-              <TarjetaPais
-                nombre={el.nombre}
-                capital={el.capital}
-                poblacion={el.poblacion}
-                bandera={el.bandera}
-                ccn3={el.ccn3}
-                region={el.region}
-              />
-            </span>
-          ))
-        ) : (
-          <h2>Buscando ....</h2>
-        )}
-      </div>
-    </section>
+    <>
+        <div className="contenedor-filtros">
+            <div className="contenedor-por-nombre">
+              <BotonDropDownRegion/>
+            </div>
+            <div className="contenedor-por-region">
+              <BotonDropDownRegion/>
+            </div>
+        </div>
+        <section className="contenedor">
+          <div className="tipoGrilla">
+            {pais ? (
+              pais.map((el) => (
+                <span key={el.nombre + el.capital + el.poblacion}>
+                  <TarjetaPais
+                    nombre={el.nombre}
+                    capital={el.capital}
+                    poblacion={el.poblacion}
+                    bandera={el.bandera}
+                    ccn3={el.ccn3}
+                    region={el.region}
+                  />
+                </span>
+              ))
+            ) : (
+              <h2>Buscando ....</h2>
+            )}
+          </div>
+        </section>
+    </>
   );
 };
 

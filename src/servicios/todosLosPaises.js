@@ -61,17 +61,17 @@ async function paisesPorRegion(region){
     return extraerDatos(Promise.all([fetch(url).then(res => res.json())]));
 }
 
-async function paisesLimitrofes(codigoPaisesLimitrofes){
+/*async function paisesLimitrofes(codigoPaisesLimitrofes){
     console.log(codigoPaisesLimitrofes);
     
-}
+}*/
 
 async function obtenerNombrePorCodigo(codigoPais){
     const url = "https://restcountries.com/v3.1/alpha?codes="+codigoPais ;
     return extraerDatos(Promise.all([fetch(url).then(res => res.json())]));
 }
 
-export {unPais, paisesPorRegion, todosLosPaises, paisesLimitrofes, obtenerNombrePorCodigo};
+export {unPais, paisesPorRegion, todosLosPaises,  obtenerNombrePorCodigo};
 
 //todosLosPaises().then(res => console.log(res))
 //unPais("Argentina").then(res => console.log(res))

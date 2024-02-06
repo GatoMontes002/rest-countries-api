@@ -30,9 +30,46 @@
     left: 0;
   }
 }
+
+.contenedor-filtros{
+  display: flex;
+  width: 100%;
+}
+.contenedor-por-nombre{
+  display: flex;
+  width: 60%;
+}
+.contenedor-por-region{
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+
 @media only screen and (max-width: 650px) {
   .tipoGrilla {
     grid-template-columns: repeat(1, 100%);
     left: 0;
   }
+  .contenedor-filtros{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contenedor-por-nombre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-por-region{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
