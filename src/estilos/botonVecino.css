@@ -4,14 +4,17 @@
     font-weight: 600;
     height: 2.5rem;
     border-radius: 8px;
+    border-style: solid;
     min-width: 80px;
 }
 .dark-theme .boton-vacino-formato{
     background-color: var(--Dark-Mode-Element);
+    border-color: lightgray;
     color: white;
 }
 
 .light-theme .boton-vacino-formato{
     background-color: var(--Light-Mode-Element);
+    border-color: lightgray;
     color: var(--Light-Mode-Text);
 }

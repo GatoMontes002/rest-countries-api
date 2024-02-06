@@ -4,7 +4,7 @@ import '../estilos/botonBusqueda.css'
 function BotonBusqueda({setPalabraBusqueda}) {
     
     return (
-      <div class="caja">
+      <div className="caja">
         <FaSearch className="search-icon" />
         <input className="boton-busqueda"
           type="search"
