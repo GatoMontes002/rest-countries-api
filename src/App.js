@@ -2,7 +2,7 @@ import "./App.css";
 import { Grilla } from "./componente/grilla";
 import { Encabezado } from "./componente/encabezado";
 import { DetallePais } from "./componente/detallePais";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<Grilla/>} />
           <Route path="/grilla/:miregion" element={<Grilla/>} />
           <Route path="/detallepais/:nombrepais" element={<DetallePais  />} />
-          <Route path="*" element={<Grilla/>} />
+          <Route path='*' element={<Navigate to='/' />} />
           </Routes>
         </BrowserRouter>
       </main>
