@@ -3,8 +3,7 @@ import { TarjetaPais } from "./tarjetaPais";
 import { useState, useEffect } from "react";
 import { paisesPorRegion, todosLosPaises } from "../servicios/todosLosPaises";
 import { useParams } from "react-router-dom";
-import { BotonDropDownRegion } from "./botonDropDownRegion";
-import { BotonBusqueda } from "./botonBusqueda";
+import { EncabezadoBusqueda } from "./encabezadoBusqueda";
 
 const Grilla = () => {
   const [pais, setPais] = useState();
@@ -32,15 +31,11 @@ const Grilla = () => {
   }, [miregion]);
 
   return (
-    <>
-        <div className="contenedor-filtros">
-            <div className="contenedor-por-nombre">
-              <span className="margen-filtros"><BotonBusqueda setPalabraBusqueda={setPalabraBusqueda} /></span>
-            </div>
-            <div className="contenedor-por-region">
-            <span className="margen-filtros" ><BotonDropDownRegion/></span>
-            </div>
-        </div>
+    <>  
+        {   setPalabraBusqueda &&
+            <EncabezadoBusqueda setPalabraBusqueda={setPalabraBusqueda} /> 
+        }
+        
         <section className="contenedor">
           <div className="tipoGrilla">
             {paisFiltrado ? (

@@ -3,14 +3,17 @@
     color: var(--Dark-Mode-Element);
     height: 3.5rem;
     border-radius: 0.8rem;
-    border-color: gray;
+    border-color: lightgrey;
+    box-shadow: none;
   }
 .dark-theme #dropdown-basic{
     background-color: var(--Dark-Mode-Element);
     color: white;
     height: 3.5rem;
     border-radius: 0.8rem;
-    border-color: gray;
+    border: none;
+    
+    box-shadow: none;
   }
 
 .dark-theme .drop-down-cl {

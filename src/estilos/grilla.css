@@ -38,12 +38,12 @@
 }
 .contenedor-por-nombre{
   display: flex;
-  width: 60%;
+  width: 70%;
 }
 .contenedor-por-region{
   display: flex;
   justify-content: flex-end;
-  width: 40%;
+  width: auto;
 }
 
 .margen-filtros{
@@ -73,6 +73,23 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+  }
+    
+  .encabezado{
+    width: 100%;
+    padding-left: 0 !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .izq{
+    justify-content: center;
+    width: 100% !important;
+  }
+  .der{
+    justify-content: center !important;
+    width: 100% !important;
   }
 }
 

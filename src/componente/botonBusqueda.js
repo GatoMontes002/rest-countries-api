@@ -4,7 +4,7 @@ import '../estilos/botonBusqueda.css'
 function BotonBusqueda({setPalabraBusqueda}) {
     
     return (
-      <div>
+      <div class="caja">
         <FaSearch className="search-icon" />
         <input className="boton-busqueda"
           type="search"
@@ -13,6 +13,7 @@ function BotonBusqueda({setPalabraBusqueda}) {
           placeholder="Search for a country..."
           onChange={(e) => setPalabraBusqueda(e.target.value.toLowerCase() )}
         />
+        
         
       </div>
     );
