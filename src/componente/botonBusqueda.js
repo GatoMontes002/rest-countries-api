@@ -1,11 +1,12 @@
 import { FaSearch } from "react-icons/fa";
+import '../estilos/botonBusqueda.css'
 
 function BotonBusqueda({setPalabraBusqueda}) {
     
     return (
       <div>
         <FaSearch className="search-icon" />
-        <input
+        <input className="boton-busqueda"
           type="search"
           name="search"
           id="search"

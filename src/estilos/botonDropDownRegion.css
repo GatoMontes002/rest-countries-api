@@ -1,0 +1,31 @@
+.light-theme #dropdown-basic{
+    background-color: var(--Light-Mode-Element);
+    color: var(--Dark-Mode-Element);
+    height: 3.5rem;
+    border-radius: 0.8rem;
+    border-color: gray;
+  }
+.dark-theme #dropdown-basic{
+    background-color: var(--Dark-Mode-Element);
+    color: white;
+    height: 3.5rem;
+    border-radius: 0.8rem;
+    border-color: gray;
+  }
+
+.dark-theme .drop-down-cl {
+    background-color: var(--Dark-Mode-Element);
+}
+.light-theme .drop-down-cl {
+    background-color: white;
+}
+
+.dark-theme .drop-down-cl-item{
+    color: white;
+}
+.light-theme .drop-down-cl-item:hover{
+  background-color: lightgray;
+}
+.dark-theme .drop-down-cl-item:hover{
+  background-color: gray;
+}

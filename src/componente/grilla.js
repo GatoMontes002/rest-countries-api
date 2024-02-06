@@ -38,7 +38,7 @@ const Grilla = () => {
               <span className="margen-filtros"><BotonBusqueda setPalabraBusqueda={setPalabraBusqueda} /></span>
             </div>
             <div className="contenedor-por-region">
-            <span className="margen-filtros"><BotonDropDownRegion/></span>
+            <span className="margen-filtros" ><BotonDropDownRegion/></span>
             </div>
         </div>
         <section className="contenedor">

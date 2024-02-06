@@ -1,0 +1,10 @@
+
+.boton-busqueda{
+    height: 3.5rem;
+    width: 18rem;
+    text-align: right;
+}
+.search-icon{
+    position: relative;
+    left: 2rem;
+}
