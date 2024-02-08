@@ -17,6 +17,7 @@
     background-color: var(--Dark-Mode-Element);
     outline-offset: 0px;
     border: none;
+    color: white;
 }
 
 .light-theme input[type="search"]{

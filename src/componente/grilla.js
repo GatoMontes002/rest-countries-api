@@ -10,14 +10,14 @@ const Grilla = () => {
   const [paisFiltrado, setPaisFiltrado] = useState();
   const miregion = useParams().miregion;
   const [palabraBusqueda, setPalabraBusqueda] = useState("");
-  
+    
   useEffect(() => 
       {   if (pais){
             setPaisFiltrado(pais.filter((el) => el.nombre.toLowerCase().includes(palabraBusqueda)));
           }
       },
     [palabraBusqueda,pais]);
-
+    
   useEffect(() => {
     miregion
       ? paisesPorRegion(miregion).then((res) => {
@@ -30,10 +30,14 @@ const Grilla = () => {
         });
   }, [miregion]);
 
+  const handlepalabra = (e) => { 
+    setPalabraBusqueda(e.target.value.toLowerCase()); 
+  };
+
   return (
     <>  
         {   setPalabraBusqueda &&
-            <EncabezadoBusqueda setPalabraBusqueda={setPalabraBusqueda} /> 
+            <EncabezadoBusqueda handlepalabra={handlepalabra} /> 
         }
         
         <section className="contenedor">

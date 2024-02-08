@@ -1,7 +1,7 @@
 import { FaSearch } from "react-icons/fa";
 import '../estilos/botonBusqueda.css'
 
-function BotonBusqueda({setPalabraBusqueda}) {
+function BotonBusqueda({palabraretorno}) {
     
     return (
       <div className="caja">
@@ -11,7 +11,7 @@ function BotonBusqueda({setPalabraBusqueda}) {
           name="search"
           id="search"
           placeholder="Search for a country..."
-          onChange={(e) => setPalabraBusqueda(e.target.value.toLowerCase() )}
+          onChange={(e) => { console.log('cambio');  palabraretorno(e);}} //= e.target.value.toLowerCase(); }}
         />
         
         
